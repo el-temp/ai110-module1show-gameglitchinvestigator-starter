@@ -44,7 +44,7 @@ I had asked the ai how to correct the point score system. The ai correctly ident
 
 - How did you decide whether a bug was really fixed?
 
------
+Firts I created a pytest using claudetgo check for if the bug was present. After reviewing the tets to make sure it should do what I want I implemented the changes and ran the test. Finally I would use streamlit to check the website personal to ensure the bug was no longer able to be recreated and no other bugs had shown in its place.
 
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
