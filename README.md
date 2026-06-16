@@ -26,6 +26,9 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+
+The prupose fo the game is to be able to correctly guess a randomly generated number in a certain number of attempts. You are scored better the less attempts it takes
+
 - [ ] Detail which bugs you found.
 - [ ] Explain what fixes you applied.
 

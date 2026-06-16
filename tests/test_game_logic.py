@@ -1,4 +1,4 @@
-from logic_utils import check_guess, parse_guess
+from logic_utils import check_guess, get_range_for_difficulty, parse_guess, update_score
 
 def test_winning_guess():
     # If the secret is 50 and guess is 50, it should be a win
@@ -65,3 +65,38 @@ def test_check_guess_large_numbers_integer_comparison():
     # "100" < "20" lexicographically (wrong), but 100 > 20 numerically (correct).
     outcome, _ = check_guess(100, 20)
     assert outcome == "Too High"
+
+
+# --- Scoring tests ---
+
+def test_score_correct_on_first_attempt():
+    # First attempt win: 100 - 10*(1-1) = 100
+    new_score = update_score(0, "Win", 1)
+    assert new_score == 100
+
+def test_score_correct_on_second_attempt():
+    # Second attempt win: 100 - 10*(2-1) = 90
+    new_score = update_score(0, "Win", 2)
+    assert new_score == 90
+
+def test_score_correct_on_third_attempt():
+    # Third attempt win: 100 - 10*(3-1) = 80
+    new_score = update_score(0, "Win", 3)
+    assert new_score == 80
+
+def test_score_decreases_by_10_each_wrong_attempt():
+    # Verify the -10 per attempt pattern: attempt 1=100, 2=90, 3=80, 4=70
+    scores = [update_score(0, "Win", attempt) for attempt in range(1, 5)]
+    for i in range(len(scores) - 1):
+        assert scores[i] - scores[i + 1] == 10
+
+def test_score_minimum_is_10():
+    # After many wrong attempts, score should floor at 10, not go negative
+    new_score = update_score(0, "Win", 100)
+    assert new_score == 10
+
+def test_score_accumulates_across_rounds():
+    # Score carries over: 0 + 100 (round 1, attempt 1) + 90 (round 2, attempt 2)
+    score = update_score(0, "Win", 1)    # 100
+    score = update_score(score, "Win", 2)  # 100 + 90 = 190
+    assert score == 190

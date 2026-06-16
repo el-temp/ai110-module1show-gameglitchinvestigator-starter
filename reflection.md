@@ -49,11 +49,11 @@ Firts I created a pytest using claudetgo check for if the bug was present. After
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
 
------
+One tets I ran was to make sure the scoring system works. The goal was for it to have a max score at 100 and go down by 10 for each incorrect answer. The test showed the changes made were successful and after running I was given a summary of how the tests worked to prove the code worked correctly.
 
 - Did AI help you design or understand any tests? How?
 
----
+Since I am unfamilia with pytest I had ai help me create them. The overall syntax made it easier me to grasp since I have done test before in a different language 
 
 ## 4. What did you learn about Streamlit and state?
 
@@ -66,11 +66,11 @@ When streamlit is used to create a web application it treats the code like a lin
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 
----------
+One habit I want to reuse is making sure to clarify the ai what it is telling me. When code is suggested i have to be careful to not always accepts and read it carefully. During this project a lot of hassle was saved by simply finding something weirs in the suggestion and then asking the ai about it to make sure which usually resulted in a correction.
 
 - What is one thing you would do differently next time you work with AI on a coding task?
 
---------
+Next time I will put more effort into being specific when prompting so I can try to catch things the first time instead of wasting tokens.
 
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
 

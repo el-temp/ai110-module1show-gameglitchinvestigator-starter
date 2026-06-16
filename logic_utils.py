@@ -60,7 +60,7 @@ def update_score(current_score: int, outcome: str, attempt_number: int):
     """Update score based on outcome and attempt number."""
     if outcome == "Win":
         # Bug fix: remove unecessary +1
-        points = 100 - 10 * attempt_number
+        points = 100 - 10 * (attempt_number - 1)
         if points < 10:
             points = 10
         return current_score + points
