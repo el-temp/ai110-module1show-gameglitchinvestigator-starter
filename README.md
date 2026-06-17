@@ -30,17 +30,24 @@ It wrote the code, ran away, and now the game is unplayable.
 The prupose fo the game is to be able to correctly guess a randomly generated number in a certain number of attempts. You are scored better the less attempts it takes
 
 - [ ] Detail which bugs you found.
+
+I found various bugs with the hints such as giving the opposite advice and alternating between higher and lower. There were also a broken scoring system.
+
 - [ ] Explain what fixes you applied.
+
+The hints where fixed by switching the words used to describe the advice and also removing the oart of the code that would make the numerical comparison a string comparison only on even attempts. The broken scoring was fixed by ensuring the math was corrected from +1 to -1 and fixing the attempt counter to start at 0.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. user enter guess of 12
+2. game returns "Go LOWER!"
+3. user enter guess of 3
+4. game return "Go HIGHER"
+5. User enter score of 6
+6. Game return "Correct!"
+7. Game retun "You won! The secret was 6. Final score:70"
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 

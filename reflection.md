@@ -22,6 +22,7 @@ Document at least 3 bugs you found. Add rows as needed.
 | 7 | go Higher | go lower | none |
 | u | out of attempts/or not change to remaining attempts | game continues | none |
 | 7 (secret value of 12) | go higher | fluxates between go higher and go lower | none |
+| 7 | score of 100 | 70 | None |
 
 ---
 
