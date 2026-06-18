@@ -31,7 +31,7 @@ The prupose fo the game is to be able to correctly guess a randomly generated nu
 
 - [ ] Detail which bugs you found.
 
-I found various bugs with the hints such as giving the opposite advice and alternating between higher and lower. There were also a broken scoring system.
+I found various bugs with the hints such as giving the opposite advice and alternating between higher and lower. There were also a broken scoring system where even guessing correct on first attempt would give a score of 70.
 
 - [ ] Explain what fixes you applied.
 
