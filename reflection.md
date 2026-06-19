@@ -45,16 +45,16 @@ I had asked the ai how to correct the point score system. The ai correctly ident
 
 - How did you decide whether a bug was really fixed?
 
-Firts I created a pytest using claudetgo check for if the bug was present. After reviewing the tets to make sure it should do what I want I implemented the changes and ran the test. Finally I would use streamlit to check the website personal to ensure the bug was no longer able to be recreated and no other bugs had shown in its place.
+Firts I created a pytest using claude to check for if the bug was present. After reviewing the tests to make sure it should do what I want I implemented the changes and ran the test. Finally I would use streamlit to check the website personal to ensure the bug was no longer able to be recreated and no other bugs had shown in its place.
 
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
 
-One tets I ran was to make sure the scoring system works. The goal was for it to have a max score at 100 and go down by 10 for each incorrect answer. The test showed the changes made were successful and after running I was given a summary of how the tests worked to prove the code worked correctly.
+One test I ran was to make sure the scoring system works. The goal was for it to have a max score at 100 and go down by 10 for each incorrect answer. The test showed the changes made were successful and after running I was given a summary of how the tests worked to prove the code worked correctly.
 
 - Did AI help you design or understand any tests? How?
 
-Since I am unfamilia with pytest I had ai help me create them. The overall syntax made it easier me to grasp since I have done test before in a different language 
+Since I am unfamiliar with pytest I had ai help me create them. The overall syntax made it easier me to grasp since I have done test before in a different language 
 
 ## 4. What did you learn about Streamlit and state?
 

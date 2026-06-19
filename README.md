@@ -27,7 +27,7 @@ It wrote the code, ran away, and now the game is unplayable.
 
 - [ ] Describe the game's purpose.
 
-The prupose fo the game is to be able to correctly guess a randomly generated number in a certain number of attempts. You are scored better the less attempts it takes
+The prupose of the game is to be able to correctly guess a randomly generated number in a certain number of attempts. You are scored better the less attempts it takes
 
 - [ ] Detail which bugs you found.
 
@@ -35,7 +35,7 @@ I found various bugs with the hints such as giving the opposite advice and alter
 
 - [ ] Explain what fixes you applied.
 
-The hints where fixed by switching the words used to describe the advice and also removing the oart of the code that would make the numerical comparison a string comparison only on even attempts. The broken scoring was fixed by ensuring the math was corrected from +1 to -1 and fixing the attempt counter to start at 0.
+The hints where fixed by switching the words used to describe the advice and also removing the part of the code that would make the numerical comparison a string comparison only on even attempts. The broken scoring was fixed by ensuring the math was corrected from +1 to -1 and fixing the attempt counter to start at 0.
 
 ## 📸 Demo Walkthrough
 
